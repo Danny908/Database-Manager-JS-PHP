@@ -1,0 +1,20 @@
+<div id="createNU">
+	<label>Nombre de Trigger:</label>
+	<input id="tableName" class="triggerName"></input>
+	<label>Cuando:</label>
+	<select id="permisos" class="triggerTime">
+		<option value="AFTER">AFTER</option>
+		<option value="BEFORE">BEFORE</option>
+	</select>
+	<select id="permisos" class="triggerAction">
+		<option value="INSERT">INSERT</option>
+		<option value="DELETE">DELETE</option>
+		<option value="UPDATE">UPDATE</option>
+	</select><br>
+	<label>Sobre la tabla:</label>
+	<select id="permisos" class="loaded_tables">
+	</select><br>
+	<label>Query:</label><br>
+	<textarea id="query" style="margin-left:20px; width: 500px; height: 200px; font-family: robotoRegular; font-size: 15px"></textarea><br><br>
+	<button id="sesionStar" class="trigger">Finalizar</button>
+</div>

@@ -1,0 +1,473 @@
+body{
+
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #f2f2f2;
+	position: absolute;
+	overflow-x: hidden;
+}
+@font-face{
+
+	font-family: robotoLight;
+	src: url(RobotoLight.ttf);
+}
+@font-face{
+
+	font-family: robotoRegular;
+	src: url(RobotoRegular.ttf);
+}
+p{
+
+	font-family: robotoLight;
+}
+#left-bar{
+
+	float: left;
+	width: 15%;
+	height: 100%;
+	background-color: white;
+	border-right:1px solid #ffcccc;
+	z-index: 1;
+	position: absolute;
+	min-width: 200px;
+	text-align: center;
+}
+#header{
+
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#secionData{
+
+	width: 200px;
+	font-family: robotoLight;
+	height: 30px;
+	border-radius: 3px;
+	border:1px solid #ffcccc;
+	background-color: #ffffe6;
+	margin-bottom: 20px;
+
+}
+#sesionStar{
+	width: 130px;
+	height: 30px;
+	margin-left: 15px;
+	border-radius: 3px;
+	background-color: #ff4d4d;
+	border: solid 1px black;
+	font-family: robotoRegular;
+	font-size: 15px;
+	color: white;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+}
+h3{
+
+	font-family: robotoRegular;
+	text-align: center;
+}
+h4{
+	font-family: robotoRegular;
+	text-align: center;	
+}
+#bdName{
+
+	width: 90%;
+	font-family: robotoLight;
+	height: 20px;
+	border-radius: 3px;
+	display: block;
+	margin : 0 auto;
+	margin-bottom: 20px;
+
+}
+#currentBD{
+
+	display: inline-block;
+	font-family: robotoRegular;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	left: 230px;
+	z-index: -2;
+	position: absolute;
+	font-size: 30px;
+	border-bottom: 1px solid black;
+}
+#crearDB{
+
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	display: block;
+	border: solid 1px black;
+	font-family: robotoRegular;
+	font-size: 15px;
+	color: #cccccc;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.eliminar{
+
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	display: block;
+	border: solid 1px black;
+	font-family: robotoRegular;
+	font-size: 15px;
+	color: #cccccc;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	border-radius: 3px;
+
+}
+#loadDB{
+
+	width: 90%;
+	font-family: robotoLight;
+	height: 25px;
+	border-radius: 3px;
+	border:1px solid #ffcccc;
+	background-color: #ffffe6;
+	display: block;
+	margin : 0 auto;
+	margin-bottom: 20px;
+}
+
+#loadDB:disabled{
+
+	border:1px solid #b3b3b3;
+	background-color: #e6e6e6;
+
+}
+#bdName:disabled{
+
+	border:1px solid #b3b3b3;
+	background-color: #e6e6e6;
+
+}
+#crearDB:disabled{
+
+	border:1px solid #b3b3b3;
+	background-color: #8c8c8c;
+	cursor: default;
+
+}
+.eliminar:disabled{
+
+	border:1px solid #b3b3b3;
+	background-color: #8c8c8c;
+	cursor: default;
+
+}
+#showDBname{
+
+	display: hidden;
+}
+#tablas-content{
+
+	width: 85%;
+	float: right;
+	border-top: 2px #4d79ff solid;
+	display: inline-block;
+	z-index: 2;
+}
+
+ul{
+
+	font-family: robotoRegular, Arial;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	color: white;
+	padding-left: 20px;
+
+}
+li{
+
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 1px 1px 5px #00134d;
+	background-color: #4d79ff;
+	border-radius: 0 0 8px 8px;
+	margin-left: 10px;
+
+}
+#manipulation-tablas:hover{
+
+	background-color: #00ccff;
+	cursor: pointer;
+
+}
+.menu_tablas{
+	background-color: #00ccff;
+	cursor: pointer;
+}
+#load_interfaz{
+
+	width: 85%;
+	height: 83%;
+	float: right;
+	min-width: 500px;
+	overflow-x: default; 
+}
+#sentencias{
+
+	width: 800px;
+	height: 200px;
+	margin-left: 20px;
+	font-family: robotoLight;
+}
+#sql-text{
+
+	margin-left: 20px;
+}
+label{
+
+	font-family: robotoLight;
+	margin-left: 20px;
+}
+#noDB{
+
+	width: 480px;
+	border-bottom: 2px dotted black;
+	margin-top: 50px;
+	margin-left: 20px;
+	font-size: 20px;
+	margin-bottom: 50px;
+	font-weight: bold;
+
+}
+#mesage{
+
+	margin-left: 20px;
+}
+#tableName{
+
+	width: 200px;
+	font-family: robotoLight;
+	height: 30px;
+	border-radius: 3px;
+	border:1px solid #ffcccc;
+	background-color: #ffffe6;
+	margin-bottom: 20px;
+
+}
+#noCampos{
+
+	width: 70px;
+	text-align: center;
+	font-family: robotoLight;
+	height: 30px;
+	border-radius: 3px;
+	border:1px solid #ffcccc;
+	background-color: #ffffe6;
+	margin-bottom: 20px;
+
+}
+#createTable{
+
+	width: 100px;
+	height: 30px;
+	margin-left: 15px;
+	border-radius: 3px;
+	background-color: #ff4d4d;
+	border: solid 1px black;
+	font-family: robotoRegular;
+	font-size: 15px;
+	color: white;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+
+}
+#tablas{
+
+	width: 100%;
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+table{
+
+	border-collapse: collapse;
+}
+th{
+
+	width: 130px;
+	height: 30px;
+	font-family: robotoRegular;
+	border: 1px solid black;
+
+}
+td{
+
+	font-family: robotoRegular;
+
+}
+#tableData{
+
+	text-align: center;
+	margin-bottom: 20px;
+}
+#tableEncabezados{
+
+	background-color: #ff4d4d;
+	color: white;
+}
+
+.dataStyle{
+
+	border:1px solid #ffcccc;
+	background-color: #ffffe6;
+	width: 125px;
+	margin: 5px;
+}
+#finalizar{
+
+	width: 130px;
+	height: 30px;
+	border-radius: 3px;
+	background-color: #ff4d4d;
+	border: solid 1px black;
+	font-family: robotoRegular;
+	font-size: 15px;
+	color: white;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-bottom: 50px;
+
+}
+#plusTData{
+
+	border:1px solid #ffcccc;
+	background-color: #ffffe6;
+	width: 35px;
+	height: 30px;
+	text-align: center;
+}
+.txt{
+
+	margin-left: 0px;
+}
+#insertar{
+	
+	width: 130px;
+	height: 30px;
+	border-radius: 3px;
+	background-color: #ff4d4d;
+	border: solid 1px black;
+	font-family: robotoRegular;
+	font-size: 15px;
+	color: white;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.listas{
+	
+	font-family: robotoRegular;
+}
+#sqlQuery{
+
+	background-color: white;
+	min-height: 150px;
+	width: 600px;
+
+}
+#successTable{
+
+	font-weight: bold;
+	border-bottom: 2px dotted black;
+	width: 300px;
+	font-size: 20px;
+}
+#data{
+
+	text-align: center;
+	border: 1px solid black;
+	height: 30px;
+	background-color: white;
+}
+#tableStructure{
+
+	margin-left: 50px;
+}
+
+#examinarData{
+
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#examinarData tbody tr td{
+
+	text-align: center;
+	background-color: white;
+	border: 1px solid black;
+}
+select{
+
+	width: 200px;
+	font-family: robotoLight;
+	height: 25px;
+	border-radius: 3px;
+	border:1px solid #ffcccc;
+	background-color: #ffffe6;
+	margin : 0 auto;
+	margin-bottom: 20px;
+}
+.add{
+
+	width: 100px;
+	height: 30px;
+	border: solid 1px black;
+	font-size: 15px;
+	color: #fff;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	background-color: #ff4d4d;
+	margin-left: 20px;
+}
+.add:disabled{
+
+	background-color: #e6e6e6;
+}
+#vista{
+
+	width: 250px;
+	height: 30px;
+	border: solid 1px black;
+	font-size: 15px;
+	color: #fff;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	background-color: #ff4d4d;
+	margin-left: 20px;
+}
+.vista{
+
+	margin-left: 50px;
+}
+#createNU{
+
+	margin-top: 20px;
+}
+#permisos{
+
+	height: 34px;
+}

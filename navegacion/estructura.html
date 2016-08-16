@@ -1,0 +1,47 @@
+<div id="createNT">
+<p hidden="true" id="noDB">No se han encontrado tablas en la base de datos.</p>
+
+<p id="mesage">Crear nueva tabla en la base de datos.</p>
+<label>Nombre:</label>
+<input id="tableName"></input>
+<label>Numero de Campos:</label>
+<input id="noCampos"></input>
+<button id="createTable">Continuar</button>
+</div>
+<div hidden id="tablas">
+
+	<p hidden="true" id="successTable">Tabla creada con exito.</p>
+	<p hidden="true" id="sqlQuery"></p>
+
+	<table id="tableData">
+		<thead>
+			<tr id="tableEncabezados">
+				<th>Campo</th>
+				<th>Tipo</th>
+				<th>Longitud</th>
+				<th>Nulo</th>
+				<th>Predeterminado</th>
+				<th>Extra</th>
+				<th>PK</th>
+			</tr>
+		</thead>
+	</table>
+	
+		<button id="finalizar">Finalizar</button><label class="txt"> O agregar </label><input id="plusTData"></input><label class="txt"> campos.</label><button id="insertar">Insertar</button>
+</div>
+<div id="tablasShow">
+
+	<table hidden id="tableStructure">
+		<thead>
+			<tr id="tableEncabezados">
+				<th>Campo</th>
+				<th>Tipo</th>
+				<th>Nulo</th>
+				<th>Key</th>
+				<th>Predeterminado</th>
+				<th>Extra</th>
+			</tr>
+		</thead>
+	</table>
+	
+</div>

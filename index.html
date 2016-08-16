@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script type="text/javascript" src="js/jquery-2.1.4"></script>
+		<script type="text/javascript" src="js/programacion.js"></script>
+
+		<title>Gestor DB</title>
+	</head>
+	<body>
+		<div id="header">
+			<p id="currentBD"></p>
+			<input type="text" autocomplete="off" id="secionData" class="user" placeholder="Usuario">
+			<input type="password" autocomplete="off" id="secionData" class="pass" placeholder="Cotraseña">
+			<button id="sesionStar">Ingresar</button>
+
+		</div>
+
+		<div id="left-bar">
+			<h3>Crear nueva BD.</h3>
+			<input type="text" id="bdName" placeholder="Nombre de la BD" disabled>
+			<button id="crearDB" disabled>Crear</button>
+			<h3>Bases de Datos.</h3>
+			<select id="loadDB" disabled><option value="1" selected>(Base de datos)...</option></select>
+			<button id="crearDB" class="eliminar" disabled>Eliminar</button>
+			<div id="listFiled"></div>
+				
+		</div>
+		<div id="tablas-content">
+			<ul id="navegacion-menu" hidden>
+				<li class="menu_tablas" value="0" id="consultas" style="display: none;">Examinar</li>
+				<li class="menu_tablas" value="1" id="manipulation-tablas">Estructura</li>
+				<li class="menu_tablas" value="2" id="manipulation-tablas">SQL</li>
+				<li class="menu_tablas" value="3" id="manipulation-tablas">Multi-Select</li>
+				<li class="menu_tablas" value="4" id="manipulation-tablas">Eliminar</li>
+				<li class="menu_tablas" value="5" id="manipulation-tablas">Crear Usuarios</li>
+				<li class="menu_tablas" value="6" id="manipulation-tablas">Triggers</li>
+				<li class="menu_tablas" value="7" id="manipulation-tablas">Procedimientos</li>
+			</ul>
+		</div>
+		<div id="load_interfaz"></div>
+	</body>
+</html>
